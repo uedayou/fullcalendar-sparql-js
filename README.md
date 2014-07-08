@@ -61,3 +61,4 @@ Copyright &copy; 2014 Hiroshi Ueda([@uedayou]). Licensed under the [MIT license]
 [bootstrap-modal]:https://github.com/jschr/bootstrap-modal
 [SPARQL Timeliner]:http://uedayou.net/SPARQLTimeliner/
 [MIT]: http://www.opensource.org/licenses/mit-license.php
+[@uedayou]:https://twitter.com/uedayou
