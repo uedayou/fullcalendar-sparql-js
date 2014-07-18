@@ -33,6 +33,7 @@
                 },
                 timeFormat: 'h:mm',
                 firstDay: 1,
+                defaultDate: typeof defaultDate == 'string' ? defaultDate : moment(),
                 events: dataJson,
                 eventClick: function(calEvent, jsEvent, view) {
                     showEventModal(calEvent.json);

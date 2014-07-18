@@ -16,5 +16,6 @@ var labelTitle = "title";
 var labelStartDate = "start";
 var labelEndDate = "end";
 var allDayFlag = true;
+//var defaultDate = '2013-10-01';
 var now = moment().format("YYYY-MM-DDTHH:mm:ss+09:00");
 var colors = ["limegreen", "gray", "purple", "darkblue", "green", "darkorange", "darkcyan", "brown", "lightseagreen"];
