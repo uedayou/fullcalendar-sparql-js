@@ -16,7 +16,13 @@
                 ev = {};
                 ev.title = j[labelTitle].value;
                 ev.start = j[labelStartDate].value;
-                if (j[labelEndDate] != null ) ev.end = j[labelEndDate].value;
+                // 時間が0時ちょうどの場合は一日足す
+                if (moment(j[labelEndDate].value).format('HH:mm:ss')=="00:00:00" || allDayFlag) {
+                    ev.end = moment(j[labelEndDate].value).add('days', 1).format();
+                }
+                else {
+                    ev.end = j[labelEndDate].value;
+                }
                 ev.color = colors[i%colors.length];
                 ev.json = j;
                 ev.allDay = allDayFlag;
